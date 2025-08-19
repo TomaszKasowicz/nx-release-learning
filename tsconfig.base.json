@@ -16,6 +16,15 @@
     "baseUrl": ".",
     "paths": {
       "@tomaszk/journey-one": ["libs/journey-one/src/index.ts"],
+      "@tomaszk/journey-one/internal/data-access": [
+        "libs/journey-one/internal/data-access/src/index.ts"
+      ],
+      "@tomaszk/journey-one/internal/feature": [
+        "libs/journey-one/internal/feature/src/index.ts"
+      ],
+      "@tomaszk/journey-one/internal/ui": [
+        "libs/journey-one/internal/ui/src/index.ts"
+      ],
       "@tomaszk/journey-one/internal/util": [
         "libs/journey-one/internal/util/src/index.ts"
       ],
