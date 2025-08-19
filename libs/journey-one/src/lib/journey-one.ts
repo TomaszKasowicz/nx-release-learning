@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { greeting } from '@tomaszk/shared-journey-lib/internal/util';
+import { greeting } from '@TomaszKasowicz/shared-journey-lib/internal/util';
 
 @Component({
   selector: 'lib-journey-one',

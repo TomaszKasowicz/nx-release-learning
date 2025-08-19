@@ -15,30 +15,30 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@tomaszk/journey-one": ["libs/journey-one/src/index.ts"],
-      "@tomaszk/journey-one/internal/data-access": [
+      "@TomaszKasowicz/journey-one": ["libs/journey-one/src/index.ts"],
+      "@TomaszKasowicz/journey-one/internal/data-access": [
         "libs/journey-one/internal/data-access/src/index.ts"
       ],
-      "@tomaszk/journey-one/internal/feature": [
+      "@TomaszKasowicz/journey-one/internal/feature": [
         "libs/journey-one/internal/feature/src/index.ts"
       ],
-      "@tomaszk/journey-one/internal/ui": [
+      "@TomaszKasowicz/journey-one/internal/ui": [
         "libs/journey-one/internal/ui/src/index.ts"
       ],
-      "@tomaszk/journey-one/internal/util": [
+      "@TomaszKasowicz/journey-one/internal/util": [
         "libs/journey-one/internal/util/src/index.ts"
       ],
-      "@tomaszk/shared-journey-lib": ["libs/shared/src/index.ts"],
-      "@tomaszk/shared-journey-lib/internal/data-access": [
+      "@TomaszKasowicz/shared-journey-lib": ["libs/shared/src/index.ts"],
+      "@TomaszKasowicz/shared-journey-lib/internal/data-access": [
         "libs/shared/internal/data-access/src/index.ts"
       ],
-      "@tomaszk/shared-journey-lib/internal/feature": [
+      "@TomaszKasowicz/shared-journey-lib/internal/feature": [
         "libs/shared/internal/feature/src/index.ts"
       ],
-      "@tomaszk/shared-journey-lib/internal/ui": [
+      "@TomaszKasowicz/shared-journey-lib/internal/ui": [
         "libs/shared/internal/ui/src/index.ts"
       ],
-      "@tomaszk/shared-journey-lib/internal/util": [
+      "@TomaszKasowicz/shared-journey-lib/internal/util": [
         "libs/shared/internal/util/src/index.ts"
       ]
     }

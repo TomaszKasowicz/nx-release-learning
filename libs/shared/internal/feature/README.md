@@ -1,3 +1,3 @@
-# @tomaszk/shared-journey-lib/internal/feature
+# @TomaszKasowicz/shared-journey-lib/internal/feature
 
-Secondary entry point of `@tomaszk/shared-journey-lib`. It can be used by importing from `@tomaszk/shared-journey-lib/internal/feature`.
+Secondary entry point of `@TomaszKasowicz/shared-journey-lib`. It can be used by importing from `@TomaszKasowicz/shared-journey-lib/internal/feature`.

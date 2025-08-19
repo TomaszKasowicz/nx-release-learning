@@ -83,11 +83,17 @@
     "projectsRelationship": "independent",
     "releaseTagPattern": "{projectName}@{version}", // default for independent release
     "version": {
-      "preVersionCommand": "npx nx run-many -t build"
+      "preVersionCommand": "npx nx run-many -t build",
+      "conventionalCommits": true
     },
     "changelog": {
       "workspaceChangelog":false,
-      "projectChangelogs": true
+      "projectChangelogs": {
+        "createRelease": "github",
+        "renderOptions": {
+          ""
+        }
+      }
     }
   }
 }
