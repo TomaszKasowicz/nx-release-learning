@@ -16,8 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@tomaszk/shared-journey-lib": ["libs/shared/src/index.ts"],
-      "@tomaszk/shared-journey-lib/shared-journey-lib-util": [
-        "libs/shared/shared-journey-lib-util/src/index.ts"
+      "@tomaszk/shared-journey-lib/internal/util": [
+        "libs/shared/internal/util/src/index.ts"
       ]
     }
   },
