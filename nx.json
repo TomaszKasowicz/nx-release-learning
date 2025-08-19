@@ -91,7 +91,10 @@
       "projectChangelogs": {
         "createRelease": "github",
         "renderOptions": {
-          ""
+          "authors": true,
+          "applyUsernameToAuthors": true,
+          "commitReferences": true,
+          "versionTitleDate": true
         }
       }
     }
