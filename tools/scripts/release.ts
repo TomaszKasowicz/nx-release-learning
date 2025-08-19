@@ -31,20 +31,28 @@ import { hideBin } from 'yargs/helpers';
     })
     .parseAsync();
 
-  const { workspaceVersion, projectsVersionData } = await releaseVersion({
+    console.log('--------------------------------');
+try {
+  const releaseVersionResult = await releaseVersion({
     specifier: options.version,
     dryRun: options.dryRun,
     verbose: options.verbose,
     firstRelease: options.firstRelease,
   });
 
-  await releaseChangelog({
+  console.log('releaseVersionResult', JSON.stringify(releaseVersionResult, null, 2));
+
+  const { workspaceVersion, projectsVersionData } = releaseVersionResult;
+
+  const releaseChangelogResult = await releaseChangelog({
     versionData: projectsVersionData,
     version: workspaceVersion,
     dryRun: options.dryRun,
     verbose: options.verbose,
     firstRelease: options.firstRelease,
   });
+
+  console.log('releaseChangelogResult', JSON.stringify(releaseChangelogResult, null, 2));
 
   // publishResults contains a map of project names and their exit codes
   const publishResults = await releasePublish({
@@ -57,7 +65,13 @@ import { hideBin } from 'yargs/helpers';
     firstRelease: options.firstRelease,
   });
 
+  console.log('publishResults', JSON.stringify(publishResults, null, 2));
+
   process.exit(
     Object.values(publishResults).every((result) => result.code === 0) ? 0 : 1
   );
+} catch (error) {
+  console.error('Error', error);
+  process.exit(1);
+}
 })();
