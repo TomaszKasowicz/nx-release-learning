@@ -6,5 +6,9 @@
     "@TomaszKasowicz/shared-journey-lib": "~0.0.1",
     "@angular/router": "^20.1.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TomaszKasowicz/nx-release-learning.git"
+  }
 }
