@@ -79,8 +79,15 @@
     }
   },
   "release": {
+    "projects": ["journey-one", "shared-journey-lib"],
+    "projectsRelationship": "independent",
+    "releaseTagPattern": "{projectName}@{version}", // default for independent release
     "version": {
       "preVersionCommand": "npx nx run-many -t build"
+    },
+    "changelog": {
+      "workspaceChangelog":false,
+      "projectChangelogs": true
     }
   }
 }
