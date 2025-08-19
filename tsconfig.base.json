@@ -20,6 +20,15 @@
         "libs/journey-one/internal/util/src/index.ts"
       ],
       "@tomaszk/shared-journey-lib": ["libs/shared/src/index.ts"],
+      "@tomaszk/shared-journey-lib/internal/data-access": [
+        "libs/shared/internal/data-access/src/index.ts"
+      ],
+      "@tomaszk/shared-journey-lib/internal/feature": [
+        "libs/shared/internal/feature/src/index.ts"
+      ],
+      "@tomaszk/shared-journey-lib/internal/ui": [
+        "libs/shared/internal/ui/src/index.ts"
+      ],
       "@tomaszk/shared-journey-lib/internal/util": [
         "libs/shared/internal/util/src/index.ts"
       ]
