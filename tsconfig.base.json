@@ -15,6 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@tomaszk/journey-one": ["libs/journey-one/src/index.ts"],
+      "@tomaszk/journey-one/internal/util": [
+        "libs/journey-one/internal/util/src/index.ts"
+      ],
       "@tomaszk/shared-journey-lib": ["libs/shared/src/index.ts"],
       "@tomaszk/shared-journey-lib/internal/util": [
         "libs/shared/internal/util/src/index.ts"
