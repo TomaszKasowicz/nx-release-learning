@@ -84,15 +84,16 @@
     "releaseTagPattern": "{projectName}@{version}", // default for independent release
     "version": {
       "preVersionCommand": "npx nx run-many -t build",
-      "conventionalCommits": true
+      "conventionalCommits": true,
+      "versionPrefix": "~"
     },
     "changelog": {
       "workspaceChangelog":false,
-      "projectChangelogs": {
+      "projectChangelogs": { // Will be replaced by AI Generated Changelogs
         "createRelease": "github",
         "renderOptions": {
-          "authors": true,
-          "applyUsernameToAuthors": true,
+          "authors": true, // can be enabled to show authors in changelog
+          "applyUsernameToAuthors": true, // not sure if this will work for backbase-rnd org
           "commitReferences": true,
           "versionTitleDate": true
         }
