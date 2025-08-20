@@ -15,6 +15,10 @@ on:
 permissions:
   contents: write
 
+env:
+  # If dryRun is defined then check if it's false. If false then set DRY_RUN to false, otherwise set it to true
+  DRY_RUN: ${{ inputs.dryRun && inputs.dryRun == 'false' && 'false' || 'true' }}
+
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -42,6 +46,6 @@ jobs:
       # - run: npx nx-cloud record -- echo Hello World
       # When you enable task distribution, run the e2e-ci task instead of e2e
       - run: |
-          npx tsx tools/scripts/release.ts --dryRun=${{ inputs.dryRun || 'true' }}
+          npx tsx tools/scripts/release.ts --dryRun=${{ env.DRY_RUN }}
 
 
