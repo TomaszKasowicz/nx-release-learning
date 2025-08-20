@@ -1,3 +1,13 @@
+## 1.3.0 (2025-08-20)
+
+### 🚀 Features
+
+- test feat ([d8e8264](https://github.com/TomaszKasowicz/nx-release-learning/commit/d8e8264))
+
+### ❤️ Thank You
+
+- Tomasz Kasowicz
+
 ## 1.1.0 (2025-08-20)
 
 ### 🚀 Features
