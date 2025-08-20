@@ -15,7 +15,6 @@ on:
 permissions:
   contents: write
 
-
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -39,4 +38,11 @@ jobs:
       # When you enable task distribution, run the e2e-ci task instead of e2e
       - run: |
           npx tsx tools/scripts/release.ts --dryRun=${{ inputs.dryRun }}
+
+      - name: Push commits and tags
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git push origin HEAD:main
+          git push --tags
 
