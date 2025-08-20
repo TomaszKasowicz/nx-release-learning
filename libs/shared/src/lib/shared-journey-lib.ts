@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 @Component({
   selector: 'lib-shared-journey-lib',
   imports: [],
-  template: `<p>SharedJourneyLib works! And has a new feature2. And fix 1</p>`,
+  template: `<p>SharedJourneyLib works! And has a new feature2. And fix 2</p>`,
   styles: ``,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
