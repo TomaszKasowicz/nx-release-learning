@@ -81,8 +81,10 @@ try {
   }
 
   console.log('Pushing commits and tags');
-  execSync('git push origin HEAD:main');
-  execSync('git push --tags');
+  if (!options.dryRun) {
+    execSync('git push origin HEAD:main');
+    execSync('git push --tags');
+  }
 
 
   Object.values(releaseChangelogResult.projectChangelogs ?? {}).forEach((result) => {
