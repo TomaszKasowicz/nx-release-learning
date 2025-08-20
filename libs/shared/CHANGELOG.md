@@ -1,3 +1,13 @@
+## 1.6.2 (2025-08-20)
+
+### 🩹 Fixes
+
+- fix test ([dd32c1d](https://github.com/TomaszKasowicz/nx-release-learning/commit/dd32c1d))
+
+### ❤️ Thank You
+
+- Tomasz Kasowicz
+
 ## 1.6.1 (2025-08-20)
 
 ### 🩹 Fixes

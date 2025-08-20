@@ -1,9 +1,9 @@
 {
   "name": "@TomaszKasowicz/journey-one",
-  "version": "1.4.3",
+  "version": "1.4.4",
   "peerDependencies": {
     "@angular/core": "^20.1.0",
-    "@TomaszKasowicz/shared-journey-lib": "~1.6.1",
+    "@TomaszKasowicz/shared-journey-lib": "~1.6.2",
     "@angular/router": "^20.1.0"
   },
   "sideEffects": false,

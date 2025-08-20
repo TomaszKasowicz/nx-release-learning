@@ -1,3 +1,9 @@
+## 1.4.4 (2025-08-20)
+
+### 🧱 Updated Dependencies
+
+- Updated shared-journey-lib to 1.6.2
+
 ## 1.4.3 (2025-08-20)
 
 ### 🧱 Updated Dependencies
