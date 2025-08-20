@@ -1,4 +1,5 @@
-import { releaseChangelog, releasePublish, releaseVersion,  } from 'nx/release';
+import { releaseChangelog, releasePublish, releaseVersion } from 'nx/release';
+import { execSync } from 'node:child_process';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
@@ -55,6 +56,9 @@ try {
   console.log('releaseChangelogResult', JSON.stringify(releaseChangelogResult, null, 2));
 
 
+  const currentBranch = execSync('git rev-parse --abbrev-ref HEAD').toString().trim();
+
+  const tag = currentBranch.includes('release') ? currentBranch.split('-')[1] : 'latest';
   // publishResults contains a map of project names and their exit codes
   const publishResults = await releasePublish({
     dryRun: options.dryRun,
@@ -64,6 +68,7 @@ try {
     // This is not required for the default @nx/js publish executor
     versionData: projectsVersionData,
     firstRelease: options.firstRelease,
+    tag:
   });
 
   console.log('publishResults', JSON.stringify(publishResults, null, 2));
