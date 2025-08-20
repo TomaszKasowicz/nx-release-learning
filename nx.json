@@ -88,7 +88,11 @@
       "versionPrefix": "~",
       "fallbackCurrentVersionResolver": "disk",
       "logUnchangedProjects": true,
-      "updateDependents": "auto"
+      "updateDependents": "auto",
+      "manifestRootsToUpdate": [
+        "dist/libs/{projectName}/package.json",
+        "libs/{projectName}/package.json"
+      ]
     },
     "changelog": {
       "workspaceChangelog":false,
