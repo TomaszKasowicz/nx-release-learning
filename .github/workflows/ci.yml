@@ -47,5 +47,6 @@ jobs:
       # When you enable task distribution, run the e2e-ci task instead of e2e
       - run: |
           npx tsx tools/scripts/release.ts --dryRun=${{ env.DRY_RUN }}
-
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
