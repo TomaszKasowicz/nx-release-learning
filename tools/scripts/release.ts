@@ -90,6 +90,7 @@ try {
       execSync(`gh release create ${result.releaseVersion.gitTag} --title ${result.releaseVersion.gitTag} --notes "${result.contents}"`);
     }
   });
+  process.exit(0);
 } catch (error) {
   console.error('Error', error);
   process.exit(1);
