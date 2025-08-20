@@ -14,7 +14,7 @@ on:
 
 permissions:
   contents: write
-packages: write
+  packages: write
 
 env:
   DRY_RUN: ${{ github.event_name == 'push' && 'true' || (github.event_name == 'workflow_dispatch' && inputs.dryRun ) }}
