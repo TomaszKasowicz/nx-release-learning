@@ -1,3 +1,13 @@
+## 1.5.0 (2025-08-20)
+
+### 🚀 Features
+
+- test ([af1b55c](https://github.com/TomaszKasowicz/nx-release-learning/commit/af1b55c))
+
+### ❤️ Thank You
+
+- Tomasz Kasowicz
+
 ## 1.2.0 (2025-08-20)
 
 This was a version bump only for shared-journey-lib to align it with other projects, there were no code changes.
