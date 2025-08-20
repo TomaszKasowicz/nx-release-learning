@@ -90,8 +90,12 @@
       "logUnchangedProjects": true,
       "updateDependents": "auto",
       "manifestRootsToUpdate": [
-        "dist/libs/{projectName}/package.json",
-        "libs/{projectName}/package.json"
+        "{projectRoot}",
+        // We use the object form of the manifestRootsToUpdate to specify that we want to update the dist package.json files and not preserve the local dependency references (if not using pnpm or bun)
+        {
+          "path": "dist/{projectRoot}",
+          "preserveLocalDependencyProtocols": false // (NOT NEEDED WHEN USING pnpm or bun) because we need to ensure our dist package.json files are valid for publishing and the local dependency references such as "workspace:" and "file:" are removed
+        }
       ]
     },
     "changelog": {

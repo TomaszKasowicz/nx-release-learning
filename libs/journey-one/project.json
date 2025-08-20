@@ -4,13 +4,6 @@
   "sourceRoot": "libs/journey-one/src",
   "prefix": "lib",
   "projectType": "library",
-  "release": {
-    "version": {
-      "manifestRootsToUpdate": ["dist/{projectRoot}"],
-      "currentVersionResolver": "git-tag",
-      "fallbackCurrentVersionResolver": "disk"
-    }
-  },
   "tags": ["scope:journey", "type:shell"],
   "targets": {
     "build": {
