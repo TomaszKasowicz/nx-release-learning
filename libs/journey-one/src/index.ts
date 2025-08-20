@@ -2,4 +2,4 @@ export * from './lib/lib.routes';
 
 export * from './lib/journey-one';
 
-export const foo = 'bar2';
+export const foo = 'bar3';
