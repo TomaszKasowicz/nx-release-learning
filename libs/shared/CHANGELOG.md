@@ -1,3 +1,13 @@
+## 1.6.0 (2025-08-20)
+
+### 🚀 Features
+
+- test ([b4c0221](https://github.com/TomaszKasowicz/nx-release-learning/commit/b4c0221))
+
+### ❤️ Thank You
+
+- Tomasz Kasowicz
+
 ## 1.5.0 (2025-08-20)
 
 ### 🚀 Features
