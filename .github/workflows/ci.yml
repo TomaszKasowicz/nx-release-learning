@@ -14,7 +14,7 @@ on:
 
 permissions:
   contents: write
-  packages: write
+packages: write
 
 env:
   DRY_RUN: ${{ github.event_name == 'push' && 'true' || (github.event_name == 'workflow_dispatch' && inputs.dryRun ) }}
@@ -51,4 +51,4 @@ jobs:
           npx tsx tools/scripts/release.ts --dryRun=${{ env.DRY_RUN }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
