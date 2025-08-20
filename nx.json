@@ -101,8 +101,12 @@
     "changelog": {
       "workspaceChangelog":false,
       "projectChangelogs": { // Will be replaced by AI Generated Changelogs
-        "createRelease": "github",
         "renderOptions": {
+          "github": {
+            "commit": true,
+            "tag": true,
+            "push": false
+          },
           "authors": true, // can be enabled to show authors in changelog
           "applyUsernameToAuthors": true, // not sure if this will work for backbase-rnd org
           "commitReferences": true,

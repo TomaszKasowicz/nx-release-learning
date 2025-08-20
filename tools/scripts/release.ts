@@ -54,6 +54,7 @@ try {
 
   console.log('releaseChangelogResult', JSON.stringify(releaseChangelogResult, null, 2));
 
+
   // publishResults contains a map of project names and their exit codes
   const publishResults = await releasePublish({
     dryRun: options.dryRun,
