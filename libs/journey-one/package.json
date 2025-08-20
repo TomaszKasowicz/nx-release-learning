@@ -1,6 +1,6 @@
 {
   "name": "@TomaszKasowicz/journey-one",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "peerDependencies": {
     "@angular/core": "^20.1.0",
     "@TomaszKasowicz/shared-journey-lib": "~1.1.0",
