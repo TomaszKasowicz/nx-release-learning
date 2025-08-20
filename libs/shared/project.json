@@ -24,8 +24,7 @@
     },
     "nx-release-publish": {
       "options": {
-        "packageRoot": "dist/{projectRoot}",
-        "tag": "2025.09-LTS"
+        "packageRoot": "dist/{projectRoot}"
       }
     },
     "test": {
