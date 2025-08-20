@@ -74,9 +74,22 @@ try {
 
   console.log('publishResults', JSON.stringify(publishResults, null, 2));
 
-  process.exit(
-    Object.values(publishResults).every((result) => result.code === 0) ? 0 : 1
-  );
+  const allSucceeded = Object.values(publishResults).every((result) => result.code === 0);
+  if (!allSucceeded) {
+    console.error('One or more projects failed to publish');
+    process.exit(1);
+  }
+
+  console.log('Pushing commits and tags');
+  execSync('git push origin HEAD:main');
+  execSync('git push --tags');
+
+
+  Object.values(releaseChangelogResult.projectChangelogs ?? {}).forEach((result) => {
+    if (!options.dryRun) {
+      execSync(`gh release create ${result.releaseVersion.gitTag} --title ${result.releaseVersion.gitTag} --notes "${result.contents}"`);
+    }
+  });
 } catch (error) {
   console.error('Error', error);
   process.exit(1);

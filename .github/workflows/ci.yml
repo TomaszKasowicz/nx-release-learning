@@ -24,6 +24,11 @@ jobs:
           filter: tree:0
           fetch-depth: 0
 
+      - name: Configure git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
       # Cache node_modules
       - uses: actions/setup-node@v4
         with:
@@ -39,10 +44,4 @@ jobs:
       - run: |
           npx tsx tools/scripts/release.ts --dryRun=${{ inputs.dryRun || 'true' }}
 
-      - name: Push commits and tags
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git push origin HEAD:main
-          git push --tags
 
