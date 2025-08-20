@@ -45,6 +45,7 @@ try {
 
   const { workspaceVersion, projectsVersionData } = releaseVersionResult;
 
+  // process.exit(0);
   const releaseChangelogResult = await releaseChangelog({
     versionData: projectsVersionData,
     version: workspaceVersion,

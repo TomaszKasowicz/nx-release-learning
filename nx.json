@@ -88,12 +88,7 @@
       "versionPrefix": "~",
       "fallbackCurrentVersionResolver": "disk",
       "logUnchangedProjects": true,
-      "updateDependents": "auto",
-      "git": {
-        "commit": false,
-        "tag": false,
-        "push": false
-      }
+      "updateDependents": "auto"
     },
     "changelog": {
       "workspaceChangelog":false,
