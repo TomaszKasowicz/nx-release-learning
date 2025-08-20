@@ -1,3 +1,13 @@
+## 1.6.1 (2025-08-20)
+
+### 🩹 Fixes
+
+- fix test ([f0568c7](https://github.com/TomaszKasowicz/nx-release-learning/commit/f0568c7))
+
+### ❤️ Thank You
+
+- Tomasz Kasowicz
+
 ## 1.6.0 (2025-08-20)
 
 ### 🚀 Features
