@@ -1,3 +1,13 @@
+## 1.6.0 (2025-08-27)
+
+### 🚀 Features
+
+- update bar ([2d81d7d](https://github.com/TomaszKasowicz/nx-release-learning/commit/2d81d7d))
+
+### ❤️ Thank You
+
+- Tomasz Kasowicz
+
 ## 1.5.0 (2025-08-27)
 
 ### 🚀 Features
