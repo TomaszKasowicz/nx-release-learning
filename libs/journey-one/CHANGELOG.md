@@ -1,3 +1,13 @@
+## 1.5.0 (2025-08-27)
+
+### 🚀 Features
+
+- bump versions ([2ee33a4](https://github.com/TomaszKasowicz/nx-release-learning/commit/2ee33a4))
+
+### ❤️ Thank You
+
+- Tomasz Kasowicz
+
 ## 1.4.4 (2025-08-20)
 
 ### 🧱 Updated Dependencies
